@@ -34,8 +34,8 @@ class ImportDataCommand extends Command
     protected function configure(): void
     {
         $this
-            ->addArgument('limit', InputArgument::OPTIONAL, 'Limit the results for pagination', 10)
-            ->addArgument('skip', InputArgument::OPTIONAL, 'Skip the results for pagination', 0);
+            ->addArgument('limit', InputArgument::OPTIONAL, 'Limit the api results', 10)
+            ->addArgument('skip', InputArgument::OPTIONAL, 'Skip the api results', 0);
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
